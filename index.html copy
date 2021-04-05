@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <!-- we import arjs version without NFT but with marker + location based support -->
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <body style="margin : 0px; overflow: hidden;">
+    <a-scene embedded arjs>
+      <a-marker preset="hiro">
+        <a-entity
+          position="0 0 0"
+          rotation="0 0 0"
+          scale="0.02 0.02 0.02"
+          gltf-model="https://cdn.glitch.com/f90bb1ad-0874-49c2-9452-b08d1f9b7e78%2FDuck.gltf?v=1617530506575"
+        ></a-entity>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
+https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf
+
+
+<!DOCTYPE html>
+<html>
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+  />
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <!-- we import arjs version without NFT but with marker + location based support -->
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <body style="margin : 0px; overflow: hidden;">
+    <p>A</p>
+    <a-scene embedded arjs>
+      <a-marker preset="hiro">
+        <a-entity
+          position="0 0 0"
+          scale="0.2 0.2 0.2"
+          obj-model="obj: url(https://cdn.glitch.com/f90bb1ad-0874-49c2-9452-b08d1f9b7e78%2Funtitled.obj?v=1617609019676)"
+          material="mtl: url(https://cdn.glitch.com/f90bb1ad-0874-49c2-9452-b08d1f9b7e78%2Funtitled.mtl?v=1617609014531)"
+        >
+        </a-entity>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>

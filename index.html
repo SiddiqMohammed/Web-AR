@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+  />
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <!-- we import arjs version without NFT but with marker + location based support -->
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <body style="margin : 0px; overflow: hidden;">
+    <a-scene embedded arjs>
+      <a-marker preset="hiro">
+
+        <a-entity
+                  
+                        id="drone"
+      position="0 0 -1"
+      scale="1 1 1" 
+      gltf-model="src: url(https://cdn.glitch.com/d151ace4-f89f-46e7-af99-d488979cd6ab%2Fphoenix.glb?v=1617554329001);"
+animation-mixer="clip: BusterDrone; loop:once"
+
+        ></a-entity>
+      </a-marker>
+
+      <a-assets>
+        <a-asset-item
+          id="bird"
+          response-type="arraybuffer"
+          src="https://cdn.glitch.com/d151ace4-f89f-46e7-af99-d488979cd6ab%2Fphoenix.glb?v=1617554329001"
+        ></a-asset-item>
+      </a-assets>
+
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
