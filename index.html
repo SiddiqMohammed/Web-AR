@@ -22,11 +22,25 @@
         ></a-entity>
       </a-marker>
 
+      <a-marker preset="hiro">
+        <a-entity
+          gltf-model="#robot"
+          scale="1 1 1"
+          animation-mixer="loop:repeat"
+        ></a-entity>
+      </a-marker>
+
       <a-assets>
         <a-asset-item
           id="bird"
           response-type="arraybuffer"
           src="https://cdn.glitch.com/d151ace4-f89f-46e7-af99-d488979cd6ab%2Fphoenix.glb?v=1617554329001"
+        ></a-asset-item>
+
+        <a-asset-item
+          id="robot"
+          response-type="arraybuffer"
+          src="https://cdn.glitch.com/f90bb1ad-0874-49c2-9452-b08d1f9b7e78%2Frobot.glb?v=1617718591251"
         ></a-asset-item>
       </a-assets>
 
